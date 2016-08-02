@@ -32,10 +32,13 @@
   int DIN6 = D6;
   int DIN7 = D7;
   int temperature;
+  String temperatureString;
   int humidity;
+  String humidityString;
   int relayOn(String command);
   int relayOff(String command);
   int pinState(String command);
+
 
   HttpClient http;
     // Headers currently need to be set at init, useful for API keys etc.
@@ -50,7 +53,7 @@
     http_response_t response;
   // DHT sensor
   DHT dht(DHTPIN, DHTTYPE);
-  Timer timer(10000, publishTempandHumidity);
+  //Timer timer(10000, publishTempandHumidity);
 
 
 
@@ -58,7 +61,7 @@ void setup() {
 
   // Start DHT sensor
   dht.begin();
-  timer.start();
+  //timer.start();
 
   pinMode(DIN1, OUTPUT);
   pinMode(DIN2, OUTPUT);
@@ -73,9 +76,10 @@ void setup() {
   String ipStr = String(myIP[0])+"."+String(myIP[1])+"."+String(myIP[2])+"."+String(myIP[3]);
 
 
-  Spark.publish("LocalIP", ipStr, 60,PRIVATE);
+  Particle.publish("LocalIP", ipStr, 60,PRIVATE);
+
   String myVersion = System.version().c_str();
-  Spark.publish("Version", myVersion, 60,PRIVATE);
+  Particle.publish("Version", myVersion, 60,PRIVATE);
 
 
  Particle.function("relayon", relayOn) ;
@@ -83,6 +87,10 @@ void setup() {
  Particle.function("pinState", pinState);
  Particle.variable("file",FILENAME, STRING);
  Particle.variable("version",VERSION, STRING);
+ Particle.variable("temperature", temperatureString );
+ Particle.variable("humidity", humidityString );
+ Particle.variable("ip", ipStr );
+ Particle.variable("firmware", myVersion);
 
 
  // http://sailpipe-dev.herokuapp.com/device/create?name=photon&data=12.3
@@ -98,24 +106,26 @@ void loop() {
     request.path = "/device/create";  // I have to put this in the loop becuase the path conatins the data
 
 
-
-
-
-
+// handmad 5 minute interval timer
+if ( millis() % 300000 == 0 ) {
+  publishTempandHumidity();
+}
 
 }
 
 void publishTempandHumidity() {
   // Humidity measurement
-  temperature = dht.getTempFarenheit();  // returns zero
+  temperature = dht.getTempFarenheit();
+  temperatureString = String(temperature);
   // temperature = dht.getTempCelcius();
-   delay(2000);
+   delay(4000);
   // Humidity measurement
   humidity = dht.getHumidity();
-  Spark.publish("temperature", String(temperature) + " °F");
-  delay(2000);
-  Spark.publish("humidity", String(humidity) + "%");
-  delay(2000);
+  humidityString = String(humidity);
+  Particle.publish("temperature", String(temperature) + " °F");
+  delay(4000);
+  Particle.publish("humidity", String(humidity) + "%");
+
 }
 
 int pinState(String command){
