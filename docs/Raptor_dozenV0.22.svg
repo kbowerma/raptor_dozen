@@ -373,12 +373,28 @@
                 <text x="454.179px" y="356.312px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:white;">1</text>
             </g>
         </g>
-        <g transform="matrix(1,0,0,1,-131.479,6.97953)">
+        <g transform="matrix(1,0,0,1,-133.345,17.199)">
             <g transform="matrix(0.820244,0,0,0.700604,-345.427,12.9205)">
                 <circle cx="453.478" cy="352.68" r="5.084" style="fill:rgb(255,0,0);"/>
             </g>
             <g transform="matrix(0.820244,0,0,0.700604,-346.984,11.8374)">
                 <text x="454.179px" y="356.312px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:white;">1</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-133.715,7.46667)">
+            <g transform="matrix(0.820244,0,0,0.700604,-345.427,12.9205)">
+                <circle cx="453.478" cy="352.68" r="5.084" style="fill:rgb(255,0,0);"/>
+            </g>
+            <g transform="matrix(0.820244,0,0,0.700604,-346.984,11.8374)">
+                <text x="454.179px" y="356.312px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:white;">0</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-20.722,-26.1054)">
+            <g transform="matrix(0.820244,0,0,0.700604,-345.427,12.9205)">
+                <circle cx="453.478" cy="352.68" r="5.084" style="fill:rgb(255,0,0);"/>
+            </g>
+            <g transform="matrix(0.820244,0,0,0.700604,-346.984,11.8374)">
+                <text x="454.179px" y="356.312px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:white;">0</text>
             </g>
         </g>
         <g transform="matrix(1,0,0,1,-21.3448,-56.1414)">
@@ -389,7 +405,7 @@
                 <text x="456.712px" y="356.312px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:white;">2</text>
             </g>
         </g>
-        <g transform="matrix(1,0,0,1,-131.146,17.8204)">
+        <g transform="matrix(1,0,0,1,-133.011,28.0399)">
             <g transform="matrix(0.820244,0,0,0.700604,-345.427,12.9205)">
                 <circle cx="453.478" cy="352.68" r="5.084" style="fill:rgb(255,0,0);"/>
             </g>
@@ -405,7 +421,7 @@
                 <text x="456.712px" y="356.312px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:white;">3</text>
             </g>
         </g>
-        <g transform="matrix(1,0,0,1,-131.244,27.5529)">
+        <g transform="matrix(1,0,0,1,-133.109,37.7724)">
             <g transform="matrix(0.820244,0,0,0.700604,-345.427,12.9205)">
                 <circle cx="453.478" cy="352.68" r="5.084" style="fill:rgb(255,0,0);"/>
             </g>
@@ -421,7 +437,55 @@
                 <text x="456.712px" y="356.312px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:white;">4</text>
             </g>
         </g>
-        <g transform="matrix(1,0,0,1,-131.442,37.8232)">
+        <g transform="matrix(1,0,0,1,-20.5368,-103.223)">
+            <g transform="matrix(0.820244,0,0,0.700604,-345.427,12.9205)">
+                <circle cx="453.478" cy="352.68" r="5.084" style="fill:rgb(255,0,0);"/>
+            </g>
+            <g transform="matrix(0.820244,0,0,0.700604,-349.282,12.2982)">
+                <text x="456.712px" y="356.312px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:white;">5</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-133.652,68.9244)">
+            <g transform="matrix(0.820244,0,0,0.700604,-345.427,12.9205)">
+                <circle cx="453.478" cy="352.68" r="5.084" style="fill:rgb(255,0,0);"/>
+            </g>
+            <g transform="matrix(0.820244,0,0,0.700604,-349.282,12.2982)">
+                <text x="456.712px" y="356.312px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:white;">5</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-19.1793,-116.856)">
+            <g transform="matrix(0.820244,0,0,0.700604,-345.427,12.9205)">
+                <circle cx="453.478" cy="352.68" r="5.084" style="fill:rgb(255,0,0);"/>
+            </g>
+            <g transform="matrix(0.820244,0,0,0.700604,-349.27,11.7724)">
+                <text x="456.712px" y="356.312px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:white;">6</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-133.546,78.8246)">
+            <g transform="matrix(0.820244,0,0,0.700604,-345.427,12.9205)">
+                <circle cx="453.478" cy="352.68" r="5.084" style="fill:rgb(255,0,0);"/>
+            </g>
+            <g transform="matrix(0.820244,0,0,0.700604,-349.27,11.7724)">
+                <text x="456.712px" y="356.312px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:white;">6</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-19.2498,-132.782)">
+            <g transform="matrix(0.820244,0,0,0.700604,-345.427,12.9205)">
+                <circle cx="453.478" cy="352.68" r="5.084" style="fill:rgb(255,0,0);"/>
+            </g>
+            <g transform="matrix(0.820244,0,0,0.700604,-349.27,11.7724)">
+                <text x="456.712px" y="356.312px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:white;">7</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-133.719,88.8872)">
+            <g transform="matrix(0.820244,0,0,0.700604,-345.427,12.9205)">
+                <circle cx="453.478" cy="352.68" r="5.084" style="fill:rgb(255,0,0);"/>
+            </g>
+            <g transform="matrix(0.820244,0,0,0.700604,-349.27,11.7724)">
+                <text x="456.712px" y="356.312px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:white;">7</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-133.307,48.0427)">
             <g transform="matrix(0.820244,0,0,0.700604,-345.427,12.9205)">
                 <circle cx="453.478" cy="352.68" r="5.084" style="fill:rgb(255,0,0);"/>
             </g>
@@ -429,22 +493,34 @@
                 <text x="456.712px" y="356.312px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:white;">4</text>
             </g>
         </g>
-        <g transform="matrix(0.820244,0,0,0.700604,-345.427,12.9205)">
+        <g transform="matrix(0.820244,0,0,0.700604,-347.292,23.14)">
             <text x="301.193px" y="363.696px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:black;">MOSFET<tspan x="326.083px 327.75px " y="363.696px 363.696px "> c</tspan>h 1 / Remote RJ45 PIN1 (w/orj):</text>
         </g>
-        <g transform="matrix(0.820244,0,0,0.700604,-344.864,25.2542)">
+        <g transform="matrix(0.820244,0,0,0.700604,-347.62,13.418)">
+            <text x="301.193px" y="363.696px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:black;">DHT1<tspan x="316.415px 319.752px " y="363.696px 363.696px ">1 </tspan>data pin (left pin:  [S+-]</text>
+        </g>
+        <g transform="matrix(0.820244,0,0,0.700604,-346.73,35.4738)">
             <text x="301.193px" y="363.696px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:black;">MOSFET<tspan x="326.083px 327.75px " y="363.696px 363.696px "> c</tspan>h 2 / Remote RJ45 PIN2 (orj):</text>
         </g>
-        <g transform="matrix(0.820244,0,0,0.700604,-345.168,36.0767)">
+        <g transform="matrix(0.820244,0,0,0.700604,-347.033,46.2962)">
             <text x="301.193px" y="363.696px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:black;">MOSFET<tspan x="326.083px 327.75px " y="363.696px 363.696px "> c</tspan>h3 / Remote RJ45 PIN3 (w/grn):</text>
         </g>
-        <g transform="matrix(0.820244,0,0,0.700604,-345.373,44.7377)">
+        <g transform="matrix(0.820244,0,0,0.700604,-348.45,76.5721)">
+            <text x="301.193px" y="363.696px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:black;">MOSFET<tspan x="326.083px 327.75px " y="363.696px 363.696px "> c</tspan>ase molex 5</text>
+        </g>
+        <g transform="matrix(0.820244,0,0,0.700604,-348.814,87.166)">
+            <text x="301.193px" y="363.696px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:black;">MOSFET<tspan x="326.083px 327.75px " y="363.696px 363.696px "> c</tspan>ase molex 6</text>
+        </g>
+        <g transform="matrix(0.820244,0,0,0.700604,-348.122,96.4413)">
+            <text x="301.193px" y="363.696px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:black;">MOSFET<tspan x="326.083px 327.75px " y="363.696px 363.696px "> c</tspan>ase molex 7</text>
+        </g>
+        <g transform="matrix(0.820244,0,0,0.700604,-347.238,54.9573)">
             <text x="301.193px" y="363.696px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:black;">MOSFET<tspan x="326.083px 327.75px " y="363.696px 363.696px "> c</tspan>h4 / Remote RJ45 PIN4 (w/blu):</text>
         </g>
-        <g transform="matrix(0.820244,0,0,0.700604,-345.882,52.3096)">
+        <g transform="matrix(0.820244,0,0,0.700604,-347.747,62.5291)">
             <text x="301.193px" y="363.696px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:black;">+12 Remote RJ45 PIN8 (brn):</text>
         </g>
-        <g transform="matrix(0.820244,0,0,0.700604,-345.882,58.4666)">
+        <g transform="matrix(0.820244,0,0,0.700604,-347.747,68.6861)">
             <text x="301.193px" y="363.696px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:black;">GND Remote RJ45 PIN6 (grn):</text>
         </g>
     </g>

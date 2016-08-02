@@ -10,41 +10,55 @@
       + Add ip, version publish at startup
       + upgraded local firmware to v5.2 (git checkout  release/v0.5.2)
       + renamed from raptor-garden
+      + Add DHT temp and humidty reading
 
 
 */
 
- #include "raptor_dozen.h"
- //#include "HttpClient/HttpClient.h"  //for web ide
+#include "raptor_dozen.h"
+   //#include "HttpClient/HttpClient.h"  //for web ide
   #include "lib/HttpClient/firmware/HttpClient.h"  // for local build
+  #include "lib/Adafruit_DHT_Library/firmware/Adafruit_DHT.h"
 
-int DIN1 = D1;
-int DIN2 = D2;
-int DIN3 = D3;
-int DIN4 = D4;
-int DIN5 = D5;
-int DIN6 = D6;
-int DIN7 = D7;
+    // DHT parameters
+  #define DHTPIN 0
+  #define DHTTYPE DHT11
 
-int relayOn(String command);
-int relayOff(String command);
-int pinState(String command);
+  int DIN1 = D1;
+  int DIN2 = D2;
+  int DIN3 = D3;
+  int DIN4 = D4;
+  int DIN5 = D5;
+  int DIN6 = D6;
+  int DIN7 = D7;
+  int temperature;
+  int humidity;
+  int relayOn(String command);
+  int relayOff(String command);
+  int pinState(String command);
 
-HttpClient http;
-// Headers currently need to be set at init, useful for API keys etc.
-http_header_t headers[] = {
-    //  { "Content-Type", "application/json" },
-    //  { "Accept" , "application/json" },
-    { "Accept" , "*/*"},
-    { NULL, NULL } // NOTE: Always terminate headers will NULL
-};
+  HttpClient http;
+    // Headers currently need to be set at init, useful for API keys etc.
+    http_header_t headers[] = {
+        //  { "Content-Type", "application/json" },
+        //  { "Accept" , "application/json" },
+        { "Accept" , "*/*"},
+        { NULL, NULL } // NOTE: Always terminate headers will NULL
+    };
 
-http_request_t request;
-http_response_t response;
+    http_request_t request;
+    http_response_t response;
+  // DHT sensor
+  DHT dht(DHTPIN, DHTTYPE);
+  Timer timer(10000, publishTempandHumidity);
+
 
 
 void setup() {
 
+  // Start DHT sensor
+  dht.begin();
+  timer.start();
 
   pinMode(DIN1, OUTPUT);
   pinMode(DIN2, OUTPUT);
@@ -57,6 +71,8 @@ void setup() {
   Serial.begin(9600);
   IPAddress myIP = WiFi.localIP();
   String ipStr = String(myIP[0])+"."+String(myIP[1])+"."+String(myIP[2])+"."+String(myIP[3]);
+
+
   Spark.publish("LocalIP", ipStr, 60,PRIVATE);
   String myVersion = System.version().c_str();
   Spark.publish("Version", myVersion, 60,PRIVATE);
@@ -83,6 +99,23 @@ void loop() {
 
 
 
+
+
+
+
+}
+
+void publishTempandHumidity() {
+  // Humidity measurement
+  temperature = dht.getTempFarenheit();  // returns zero
+  // temperature = dht.getTempCelcius();
+   delay(2000);
+  // Humidity measurement
+  humidity = dht.getHumidity();
+  Spark.publish("temperature", String(temperature) + " °F");
+  delay(2000);
+  Spark.publish("humidity", String(humidity) + "%");
+  delay(2000);
 }
 
 int pinState(String command){
