@@ -21,7 +21,7 @@
 
   // DHT sensor
   DHT dht(DHTPIN, DHTTYPE);
-  //Timer timer(10000, publishTempandHumidity);
+
 
 void setup() {
 
