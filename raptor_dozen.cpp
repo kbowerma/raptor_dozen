@@ -115,17 +115,21 @@ if ( millis() % 300000 == 0 ) {
 }
 
 void publishTempandHumidity() {
-  // Humidity measurement
+  // Temperature measurement
   temperature = dht.getTempFarenheit();
   temperatureString = String(temperature);
-  // temperature = dht.getTempCelcius();
+  request.path = String("/device/create?type=sensor&desc=temperature&name=raptor&data=" + temperatureString );
+  http.get(request, response, headers);
+
    delay(4000);
   // Humidity measurement
   humidity = dht.getHumidity();
   humidityString = String(humidity);
+  request.path = String("/device/create?type=sensor&desc=humidity&name=raptor&data=" + humidityString );
+  http.get(request, response, headers);
   Particle.publish("temperature", String(temperature) + " °F");
-  delay(4000);
   Particle.publish("humidity", String(humidity) + "%");
+
 
 }
 
