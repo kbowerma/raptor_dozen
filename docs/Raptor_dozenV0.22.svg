@@ -497,7 +497,7 @@
             <text x="301.193px" y="363.696px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:black;">MOSFET<tspan x="326.083px 327.75px " y="363.696px 363.696px "> c</tspan>h 1 / Remote RJ45 PIN1 (w/orj):</text>
         </g>
         <g transform="matrix(0.820244,0,0,0.700604,-347.62,13.418)">
-            <text x="301.193px" y="363.696px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:black;">DHT1<tspan x="316.415px 319.752px " y="363.696px 363.696px ">1 </tspan>data pin (left pin:  [S+-]</text>
+            <text x="301.193px" y="363.696px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:black;">DHT22 data pin (2nd pin:  [+s_G]</text>
         </g>
         <g transform="matrix(0.820244,0,0,0.700604,-346.73,35.4738)">
             <text x="301.193px" y="363.696px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;fill:black;">MOSFET<tspan x="326.083px 327.75px " y="363.696px 363.696px "> c</tspan>h 2 / Remote RJ45 PIN2 (orj):</text>
@@ -674,7 +674,7 @@
     </g>
     <g transform="matrix(1,0,0,1,75.7396,3.8776)">
         <g>
-            <text x="232.936px" y="13.326px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:black;">Raptor Dozen  8/1/2016</text>
+            <text x="232.936px" y="13.326px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:black;">Raptor Dozen  8/16/2016</text>
         </g>
     </g>
     <g transform="matrix(1,0,0,1,353.954,-107.296)">
