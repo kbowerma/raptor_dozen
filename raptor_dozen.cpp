@@ -11,6 +11,7 @@
       + upgraded local firmware to v5.2 (git checkout  release/v0.5.2)
       + renamed from raptor-garden
       + Add DHT temp and humidty reading
+  8.16.2016 2.1d switch to dht22
 
 
 */
@@ -22,7 +23,7 @@
 
     // DHT parameters
   #define DHTPIN 0
-  #define DHTTYPE DHT11
+  #define DHTTYPE DHT22
 
   int DIN1 = D1;
   int DIN2 = D2;
