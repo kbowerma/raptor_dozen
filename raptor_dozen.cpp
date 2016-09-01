@@ -12,6 +12,7 @@
       + renamed from raptor-garden
       + Add DHT temp and humidty reading
   8.16.2016 2.1d switch to dht22
+  8.31.2016 publish ssid and rssi 
 
 
 */
@@ -40,9 +41,11 @@ void setup() {
   Serial.begin(9600);
   IPAddress myIP = WiFi.localIP();
   String ipStr = String(myIP[0])+"."+String(myIP[1])+"."+String(myIP[2])+"."+String(myIP[3]);
-   Particle.publish("LocalIP", ipStr, 60,PRIVATE);
+  Particle.publish("LocalIP", ipStr, 60,PRIVATE);
   String myVersion = System.version().c_str();
-   Particle.publish("Version", myVersion, 60,PRIVATE);
+  Particle.publish("Version", myVersion, 60,PRIVATE);
+  Particle.publish("rssi", String( WiFi.RSSI()), 60, PRIVATE);
+  Particle.publish("ssid", String( WiFi.SSID()), 60, PRIVATE);
 
    Particle.function("relayon", relayOn) ;
    Particle.function("relayoff", relayOff);

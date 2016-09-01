@@ -3,7 +3,7 @@
 
 //Globals
 #define FILENAME "raptor_dozen"
-#define VERSION "2.3"
+#define VERSION "2.3f"
 // DHT parameters
   #define DHTPIN 0
   #define DHTTYPE DHT22
