@@ -27,8 +27,8 @@ A0| - | D0 | DHT22 (yellow wire)
 
 
 pin | Function | wire
-----|---------
+----|---------|----
 1 | VDD  | red
 2 | Data | yellow
-3 | NULL
+3 | NULL | 
 4 | GND  | green
